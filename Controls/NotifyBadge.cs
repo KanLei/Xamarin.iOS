@@ -9,6 +9,8 @@ namespace DemoApp
 {
     /// <summary>
     /// 用于显示消息提示数量
+    /// 使用介绍:约束 UIView 的 Top 和 Leading, 
+    /// 设置其 Intrinsic Size 为 Placeholder 即可
     /// </summary>
     [Register("NotifyBadge")]
     public class NotifyBadge:UIView
