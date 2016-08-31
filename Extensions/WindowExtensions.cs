@@ -9,9 +9,7 @@ public static class WindowExtensions
 		popupWindow = popupWindow ?? CreatePopupWindow ();
 		view.Frame = popupWindow.Bounds;
 		popupWindow.AddSubview (view);
-
-		popupWindow.Hidden = false;
-		popupWindow.MakeKeyWindow ();
+		popupWindow.MakeKeyAndVisible ();
 	}
 
 	public static void HidePopupView (this UIView view)
@@ -28,7 +26,6 @@ public static class WindowExtensions
 	{
 		var extWindow = new UIWindow (UIScreen.MainScreen.Bounds);
 		extWindow.WindowLevel = UIWindowLevel.Alert;
-		extWindow.BackgroundColor = UIColor.Green.ColorWithAlpha (0.5f);
 		return extWindow;
 	}
 }
