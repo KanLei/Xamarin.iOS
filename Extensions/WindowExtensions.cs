@@ -2,6 +2,7 @@
 
 public static class WindowExtensions
 {
+	// 用于保存临时引用和及时释放引用
 	private static UIWindow popupWindow;  // 可重复使用同一个 Window
 
 	public static void ShowPopupView (this UIView view)
