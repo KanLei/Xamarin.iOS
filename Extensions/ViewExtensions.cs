@@ -6,6 +6,7 @@ using CoreAnimation;
 
 public static class ViewExtensions
 {
+	/// call in eg: layoutSubviews()
 	public static void Round (this UIView view, UIRectCorner corners, nfloat radius)
 	{
 		var bezierPath = UIBezierPath.FromRoundedRect (view.Bounds,
